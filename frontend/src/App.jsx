@@ -28,8 +28,6 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (history.length === 0) return;
-
     localStorage.setItem("history", JSON.stringify(history));
   }, [history])
 
